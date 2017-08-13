@@ -1,4 +1,4 @@
-<h1>{{appTitle}}</h1>
+<!--<h1>{{appTitle}}</h1>
 
 <div *ngIf = 'appStatus'>{{appTitle}} appTitle is true</div>
 <div *ngFor = 'let app of appList'>
@@ -6,4 +6,11 @@
         <li>{{app.id}}</li>
         <img [src] = 'app.url' height="10%" width="10%">
     </ul>
-</div>
+</div>-->
+
+<ul>
+    <li><a [routerLink] = "['/Product']">Product</a></li>
+    <li><a [routerLink] = "['/Inventory']">Inventory</a></li>
+    <li><a [routerLink] = "['/blehblehbleh']">Bleh bleh bleh...</a></li>
+</ul>
+<router-outlet></router-outlet>
