@@ -1,0 +1,9 @@
+<h1>{{appTitle}}</h1>
+
+<div *ngIf = 'appStatus'>{{appTitle}} appTitle is true</div>
+<div *ngFor = 'let app of appList'>
+    <ul>
+        <li>{{app.id}}</li>
+        <img [src] = 'app.url' height="10%" width="10%">
+    </ul>
+</div>
